@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gestion Hôpital</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏥 Gestion d'Hôpital (Version GitHub)</h1>
+
+<div class="menu">
+<button onclick="show('patients')">Patients</button>
+<button onclick="show('medecins')">Médecins</button>
+<button onclick="show('rdv')">Rendez-vous</button>
+</div>
+
+<div id="patients" class="section">
+<h2>Patients</h2>
+<input id="p_nom" placeholder="Nom">
+<input id="p_age" type="number" placeholder="Age">
+<input id="p_maladie" placeholder="Maladie">
+<button onclick="addPatient()">Ajouter</button>
+<ul id="patients_list"></ul>
+</div>
+
+<div id="medecins" class="section">
+<h2>Médecins</h2>
+<input id="m_nom" placeholder="Nom">
+<input id="m_spec" placeholder="Spécialité">
+<button onclick="addMedecin()">Ajouter</button>
+<ul id="medecins_list"></ul>
+</div>
+
+<div id="rdv" class="section">
+<h2>Rendez-vous</h2>
+<input id="r_patient" placeholder="Patient">
+<input id="r_medecin" placeholder="Médecin">
+<input id="r_date" type="date">
+<button onclick="addRDV()">Ajouter</button>
+<ul id="rdv_list"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
